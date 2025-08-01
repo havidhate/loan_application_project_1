@@ -1,0 +1,58 @@
+/* src/features/applicationForm/form.css */
+.multi-form {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.breadcrumb span {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.breadcrumb .active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.step-container {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tooltip {
+  font-size: 0.8rem;
+  color: #888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}

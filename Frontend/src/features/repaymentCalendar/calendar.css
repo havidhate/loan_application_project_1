@@ -1,0 +1,57 @@
+/* src/features/repaymentCalendar/calendar.css */
+.calendar-section {
+  margin-top: 40px;
+}
+
+.calendar-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.calendar-cell {
+  width: calc(33% - 10px);
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.calendar-cell:hover {
+  transform: scale(1.03);
+  background: #fff;
+}
+
+.status-label {
+  font-weight: bold;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.calendar-cell.paid {
+  border-left: 5px solid green;
+}
+
+.calendar-cell.overdue {
+  border-left: 5px solid red;
+}
+
+.calendar-cell.upcoming {
+  border-left: 5px solid goldenrod;
+}
+
+.calendar-cell button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.calendar-cell button:hover {
+  background-color: #0056b3;
+}

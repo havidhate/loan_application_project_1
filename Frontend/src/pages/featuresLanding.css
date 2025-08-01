@@ -1,0 +1,32 @@
+/* src/pages/featuresLanding.css */
+.features-container {
+  text-align: center;
+  padding: 3rem;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  width: 220px;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  background-color: #e6f2ff;
+}
